@@ -1,0 +1,172 @@
+/* General reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    font-family: 'Times New Roman', sans-serif;
+     background-image: url('./image/FT.webp'); /* Đường dẫn tới ảnh nền */
+    background-size: cover; /* Ảnh sẽ bao phủ toàn bộ màn hình */
+    background-repeat: no-repeat; /* Không lặp lại ảnh */
+    background-attachment: fixed; /* Ảnh cố định khi cuộn trang */
+    background-position: center; /* Đặt vị trí ảnh ở giữa */
+    color: #fff; /* Màu chữ hiển thị dễ đọc trên nền */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;  
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Nền đen trong suốt */
+    color: #fff; /* Màu chữ trắng */
+    text-align: center;
+    padding: 20px 0; /* Khoảng cách trên dưới */
+    font-size: 1.5rem; /* Kích thước chữ */
+    border-bottom: 2px solid #ff9800; /* Viền dưới màu cam */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+}
+
+
+header h1 {
+    font-size: 2.5rem; /* Kích thước tiêu đề */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+header p {
+    font-size: 1.1rem; 
+    margin: 5px 0 0 0; 
+    color: #fff;
+}
+.nav {
+    display: flex;
+    justify-content: center; /* Canh giữa các mục */
+    align-items: center;
+    background-color: rgba(255, 152, 0, 0.9); /* Màu cam với độ trong suốt */
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Đổ bóng */
+}
+
+.nav a {
+    color: #fff; /* Màu chữ trắng */
+    text-decoration: none;
+    padding: 10px 20px; /* Khoảng cách bên trong */
+    margin: 0 10px; /* Khoảng cách giữa các mục */
+    border-radius: 5px; /* Góc bo tròn */
+    font-size: 1rem; /* Kích thước chữ */
+    transition: all 0.3s ease; /* Hiệu ứng chuyển đổi */
+}
+
+.nav a:hover {
+    background-color: #fff; /* Nền trắng khi rê chuột */
+    color: #ff9800; /* Màu cam chữ */
+    transform: scale(1.1); /* Phóng to nhẹ khi hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Đổ bóng khi hover */
+}
+
+h2 {
+    margin: 20px 0;
+    color: #fff;
+    text-align: center;
+}
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8); /* Nền sáng nhưng tăng opacity */
+    color: #000; /* Chữ đen rõ ràng */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bóng nhẹ */
+}
+.container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+
+form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.btn-back-home {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #333;
+    background-color: #fff;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btn-back-home:hover {
+    background-color: #f0f0f0;
+}
+.profile-address {
+    background-color: rgba(0, 0, 0, 0.1);/* Light background for the address */
+    color: #fff;  /* Dark text color */
+    padding: 15px; /* Add some padding around the text */
+    margin-top: 30px; /* Space from previous elements */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 1.1rem; /* Slightly larger text for readability */
+    text-align: center; /* Center-align the address text */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    
+}
+
+.profile-address a {
+    color: #007bff; /* Make links blue */
+    text-decoration: none;
+}
+
+.profile-address a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="haha.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header><h1>Login</h1></header>
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="profile.html">Profile</a>
+        <a href="cart.html">My Cart</a>
+    </nav>
+    
+    <div class="container">
+        <form onsubmit="return handleLogin(event)">
+            <div class="form-group">
+                <label for="login-email">Email</label>
+                <input type="email" id="login-email" required>
+                <small class="error-message" id="email-error"></small>
+            </div>
+            <div class="form-group">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" required minlength="6">
+                <small class="error-message" id="password-error"></small>
+            </div>
+            <div class="form-group">
+                <label for="login-name">Name</label>
+                <input type="name" id="login-name" required>
+                <small class="error-message" id="name-error"></small>
+            </div>
+            <div class="form-group">
+                <label for="login-phone">Phone</label>
+                <input type="phone" id="login-phone" required minlength="9">
+                <small class="error-message" id="phone-error"></small>
+            </div>
+            <button type="submit">Login</button>
+           
+        </form>
+        
+        
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="index.html" class="btn-back-home">Back to Home</a>
+        </div>
+
+       
+        <div style="text-align: center; margin-top: 10px;">
+            <p>Don't have an account? <a href="register.html">Register here</a></p>
+        </div>
+    </div>
+    <p class="profile-address">Address: Alley 74, Cau Dien Ward, Nam Tu Liem District, Hanoi City. Phone: 0123456789</p>
+   
+    
+</body>
+</html>

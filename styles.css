@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', sans-serif;
+     background-image: url('./image/FT.webp'); /* Đường dẫn tới ảnh nền */
+    background-size: cover; /* Ảnh sẽ bao phủ toàn bộ màn hình */
+    background-repeat: no-repeat; /* Không lặp lại ảnh */
+    background-attachment: fixed; /* Ảnh cố định khi cuộn trang */
+    background-position: center; /* Đặt vị trí ảnh ở giữa */
+    color: #fff; /* Màu chữ hiển thị dễ đọc trên nền */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;  
+}
+
+.container {
+    max-width: 1500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Nền đen trong suốt */
+    color: #fff; /* Màu chữ trắng */
+    text-align: center;
+    padding: 20px 0; /* Khoảng cách trên dưới */
+    font-size: 1.5rem; /* Kích thước chữ */
+    border-bottom: 2px solid #ff9800; /* Viền dưới màu cam */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+}
+
+
+header h1 {
+    font-size: 2.5rem; /* Kích thước tiêu đề */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+.nav {
+    display: flex;
+    justify-content: center; /* Canh giữa các mục */
+    align-items: center;
+    background-color: rgba(255, 152, 0, 0.9); /* Màu cam với độ trong suốt */
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Đổ bóng */
+}
+
+.nav a {
+    color: #fff; /* Màu chữ trắng */
+    text-decoration: none;
+    padding: 10px 20px; /* Khoảng cách bên trong */
+    margin: 0 10px; /* Khoảng cách giữa các mục */
+    border-radius: 5px; /* Góc bo tròn */
+    font-size: 1rem; /* Kích thước chữ */
+    transition: all 0.3s ease; /* Hiệu ứng chuyển đổi */
+}
+
+.nav a:hover {
+    background-color: #fff; /* Nền trắng khi rê chuột */
+    color: #ff9800; /* Màu cam chữ */
+    transform: scale(1.1); /* Phóng to nhẹ khi hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Đổ bóng khi hover */
+}
+
+h2 {
+    margin: 20px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px; 
+    width: 100%;
+}
+
+.car-listing {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100%;
+    
+}
+.image {
+    width: 100%;
+    height: 20%;
+}
+
+.car-listing img {
+    width: 100%;
+    height: 200px; /* Set a consistent height */
+    object-fit: cover; /* Ensures the image maintains the aspect ratio while covering the area */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.car-listing img:hover {
+    transform: scale(1.05); /* Phóng to ảnh nhẹ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng khi hover */
+    transition: all 0.3s ease; /* Hiệu ứng mượt */
+    cursor: pointer; /* Thay đổi con trỏ chuột */
+}
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease; /* Thêm hiệu ứng mượt */
+}
+
+button:hover {
+    background-color: #ff9800; /* Chuyển sang màu cam */
+    color: #fff; /* Chữ trắng */
+    transform: scale(1.1); /* Phóng to nút */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+}
+button:active {
+    transform: scale(0.95); /* Thu nhỏ nhẹ */
+    background-color: #e67e22; /* Màu cam đậm hơn */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Giảm đổ bóng */
+}
+.profile-address {
+    background-color: rgba(0, 0, 0, 0.1);/* Light background for the address */
+    color: #fff;  /* Dark text color */
+    padding: 15px; /* Add some padding around the text */
+    margin-top: 30px; /* Space from previous elements */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 1.1rem; /* Slightly larger text for readability */
+    text-align: center; /* Center-align the address text */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    
+}
+
+.profile-address a {
+    color: #007bff; /* Make links blue */
+    text-decoration: none;
+}
+
+.profile-address a:hover {
+    text-decoration: underline;
+}
+/* Tổng quan về modal */
+.modal {
+    display: none; /* Modal mặc định bị ẩn */
+    position: fixed; /* Giữ modal cố định khi cuộn */
+    z-index: 1000; /* Modal nổi trên mọi phần tử khác */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Tô mờ nền phía sau modal */
+}
+
+/* Nội dung của modal */
+.modal-content {
+    background-color: #fff; /* Màu nền trắng */
+    margin: 5% auto; /* Căn giữa theo chiều ngang và dọc */
+    padding: 20px;
+    border: none; /* Loại bỏ viền mặc định */
+    width: 100%; /* Độ rộng modal (thay đổi theo màn hình nhỏ hơn) */
+    max-width: 800px; /* Đặt giới hạn độ rộng tối đa */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Đổ bóng hiện đại */
+    border-radius: 12px; /* Bo góc mềm mại */
+    animation: slide-down 0.3s ease; /* Hiệu ứng chuyển động khi mở modal */
+}
+
+/* Nút đóng modal */
+.close {
+    color: #333; /* Màu chữ mặc định */
+    float: right; /* Đặt nút ở góc phải trên */
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer; /* Con trỏ chuột thay đổi khi hover */
+    transition: color 0.2s ease; /* Hiệu ứng chuyển màu khi hover */
+}
+
+.close:hover,
+.close:focus {
+    color: #e74c3c; /* Màu đỏ khi hover */
+    text-decoration: none; /* Xóa gạch chân */
+}
+
+/* Hiệu ứng khi mở modal */
+@keyframes slide-down {
+    from {
+        transform: translateY(-30px); /* Bắt đầu từ trên cao */
+        opacity: 0; /* Modal trong suốt */
+    }
+    to {
+        transform: translateY(0); /* Trả về vị trí ban đầu */
+        opacity: 1; /* Modal hiện rõ */
+    }
+}
+
+/* Căn chỉnh văn bản trong modal */
+.modal-content h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center; /* Căn giữa tiêu đề */
+}
+
+.modal-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555; /* Màu văn bản dễ đọc */
+    text-align: justify; /* Căn đều nội dung */
+}
+
+/* Responsive: Điều chỉnh modal trên màn hình nhỏ */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%; /* Độ rộng tăng lên cho màn hình nhỏ */
+        padding: 15px;
+    }
+
+    .close {
+        font-size: 22px; /* Giảm kích thước nút đóng */
+    }
+}

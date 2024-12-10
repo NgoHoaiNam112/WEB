@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Sales - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="java.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Car Sales</h1>
+        <p id="welcome-name"></p>
+    </header>
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="profile.html">Profile</a>
+        <a href="cart.html">My Cart</a>
+    </nav>
+    <div class="container">
+        <h2>Featured Cars</h2>
+        <p>Explore our latest car listings and find the car that's right for you.</p>
+        <div class="image-grid">
+            <div class="car-listing">
+                <h3>Chevrolet Cruze 2024</h3>
+                <img class="image" src="./image/Chevrolet Cruze 2024.jpg" alt="Chevrolet Cruze 2024" onclick="openModal('Chevrolet Cruze 2024')">
+                <p>Price: 598.000.000 VND</p>
+                <button onclick="addToCart(1, 'Chevrolet Cruze 2024', 598000000)">Add to Cart</button>
+            </div>
+            
+            <div class="car-listing">
+                <h3>Maybach-gls-480-range-rover-2024</h3>
+                <img class="image" src="./image/maybach-gls-480-range-rover-sv-2024.jpg" alt="Maybach-gls-480-range-rover-2024" onclick="openModal('Maybach-gls-480-range-rover-2024')">
+                <p>Price: 16.869.000.000 VND</p>
+                <button onclick="addToCart(2, 'Maybach-gls-480-range-rover-2024', 16869000000)">Add to Cart</button>
+            </div>
+    
+            <div class="car-listing">
+                <h3>ford-ranger-xlt-2024</h3>
+                <img class="image" src="./image/ford-ranger-xlt-202.jpg" alt="ford-ranger-xlt-2024" onclick="openModal('ford-ranger-xlt-2024')">
+                <p>Price: 669.000.000 VND</p>
+                <button onclick="addToCart(3, 'ford-ranger-xlt-2024', 669000000)">Add to Cart</button>
+            </div>
+    
+            <div class="car-listing">
+                <h3>Mercedes-Benz Maybach S-Class</h3>
+                <img class="image" src="./image/Mercedes-Benz Maybach S-Class.webp" alt="Mercedes-Benz Maybach S-Class" onclick="openModal('Mercedes-Benz Maybach S-Class')">
+                <p>Price: 8.199.000.000 VND</p>
+                <button onclick="addToCart(4, 'Mercedes-Benz Maybach S-Class', 8199000000)">Add to Cart</button>
+            </div>
+    
+            <div class="car-listing">
+                <h3>mercedes-c300</h3>
+                <img class="image" src="./image/mercedes-c300.jpg" alt="mercedes-c300" onclick="openModal('mercedes-c300')">
+                <p>Price: 2.099.000.000 VND</p>
+                <button onclick="addToCart(5, 'mercedes-c300', 2099000000)">Add to Cart</button>
+            </div>
+    
+            <div class="car-listing">
+                <h3>Mercedes-Maybach GLS 600 4Matic 2022</h3>
+                <img class="image" src="./image/Mercedes-Maybach-GLS-600.jpg" alt="Mercedes-Maybach GLS 600 4Matic 2022" onclick="openModal('Mercedes-Maybach GLS 600 4Matic 2022')">
+                <p>Price: 11.619.000.000 VND</p>
+                <button onclick="addToCart(6, 'Mercedes-Maybach GLS 600 4Matic 2022', 11619000000)">Add to Cart</button>
+            </div>
+    
+            <div class="car-listing">
+                <h3>Mercedes-Maybach-S450-4MATIC</h3>
+                <img class="image" src="./image/Mercedes-Maybach-S450-4MATIC.jpg" alt="Mercedes-Maybach-S450-4MATIC" onclick="openModal('Mercedes-Maybach-S450-4MATIC')">
+                <p>Price: 8.199.000.000 VND</p>
+                <button onclick="addToCart(7, 'Mercedes-Maybach-S450-4MATIC', 8199000000)">Add to Cart</button>
+            </div>
+    
+            <div class="car-listing">
+                <h3>Toyota Vios</h3>
+                <img class="image" src="./image/Toyota Vios.webp" alt="Toyota Vios" onclick="openModal('Toyota Vios')">
+                <p>Price: 458.000.000 VND</p>
+                <button onclick="addToCart(7, 'oyota Vios', 458000000)">Add to Cart</button>
+            </div>
+    
+            <div class="car-listing">
+                <h3>Toyota-raize</h3>
+                <img class="image" src="./image/Toyota-raize.webp" alt="Toyota-raize" onclick="openModal('Toyota-raize')">
+                <p>Price: 489.000.000 VND</p>
+                <button onclick="addToCart(8, 'Toyota-raize', 489000000)">Add to Cart</button>
+            </div>
+    
+            <div class="car-listing">
+                <h3>Vinfast Lux A2.0</h3>
+                <img class="image" src="./image/Vinfast Lux A2.0.jpg" alt="Vinfast Lux A2.0" onclick="openModal('Vinfast Lux A2.0')">
+                <p>Price: 1.649.000.000 VND</p>
+                <button onclick="addToCart(9, 'Vinfast Lux A2.0', 1649000000)">Add to Cart</button>
+            </div>
+    
+            <div class="car-listing">
+                <h3>Vinfast Lux SA2.0</h3>
+                <img class="image" src="./image/Vinfast Lux SA2.0.jpg" alt="Vinfast Lux SA2.0" onclick="openModal('Vinfast Lux SA2.0')">
+                <p>Price: 1.179.000.000 VND</p>
+                <button onclick="addToCart(10, 'Vinfast Lux SA2.0', 1179000000)">Add to Cart</button>
+            </div>
+            <div class="car-listing">
+                <h3>Vinfast VF8 Lux </h3>
+                <img class="image" src="./image/VF-8-Lux-101.jpg" alt="Vinfast VF8 Lux" onclick="openModal('Vinfast VF8 Lux')">
+                <p>Price: 1.110.000.000 VND</p>
+                <button onclick="addToCart(10, 'Vinfast VF8 Lux ', 1110000000)">Add to Cart</button>
+            </div>  
+        </div>
+    <p class="profile-address">Address: Alley 74, Cau Dien Ward, Nam Tu Liem District, Hanoi City. Phone: 0123456789</p>
+</body>
+<div id="carModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="carName">Tên xe</h2>
+        <p id="carSpecs">Thông số kỹ thuật sẽ được hiển thị tại đây.</p>
+    </div>
+</div>
+</html>

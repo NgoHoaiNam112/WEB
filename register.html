@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="haha.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header><h1>Register</h1></header>
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="profile.html">Profile</a>
+        <a href="cart.html">My Cart</a>
+    </nav>
+    <div class="container">
+        <form onsubmit="return handleRegister()">
+            <div class="form-group">
+                <label for="register-email">Email</label>
+                <input type="email" id="register-email" required>
+            </div>
+            <div class="form-group">
+                <label for="register-name">Name</label>
+                <input type="name" id="register-name" required>
+            </div>
+            <div class="form-group">
+                <label for="register-phone">Phone</label>
+                <input type="phone" id="register-phone" required minlength="9">
+            </div>
+            <div class="form-group">
+                <label for="register-password">Password</label>
+                <input type="password" id="register-password" required minlength="6">
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" required>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+        
+        <!-- Back to Home button -->
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="index.html" class="btn-back-home">Back to Home</a>
+        </div>
+    </div>
+    <p class="profile-address">Address: Alley 74, Cau Dien Ward, Nam Tu Liem District, Hanoi City. Phone: 0123456789</p>
+<html>

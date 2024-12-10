@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart - Car Sales</title>
+    <link rel="stylesheet" href="hehe.css">
+    <script src="jv.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Your Shopping Cart</h1>
+    </header>
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="profile.html">Profile</a>
+        <a href="cart.html">My Cart</a>
+    </nav>
+    
+    <div class="container">
+        <h2>Items in Your Cart</h2>
+        
+        <div id="cart-items"></div>
+
+        <div class="total">
+            <h3>Total: <span id="total-price">0.00</span> VND</h3>
+        </div>
+
+        <button onclick="checkout()">Proceed to Checkout</button>
+        <!-- Nút thanh toán -->
+        <button id="payment-btn" onclick="processPayment()">Pay Now</button>
+    </div>
+    <!-- Form thanh toán (sử dụng modal) -->
+<!-- Form thanh toán (sử dụng modal) -->
+<div id="payment-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Payment Information</h2>
+        <form id="payment-form">
+            <!-- Card Number -->
+            <label for="card-number">Card Number <small>(16 digits, no spaces)</small></label>
+            <input type="text" id="card-number" placeholder="1234 5678 9012 3456" required pattern="\d{16}" title="Please enter 16 digits" maxlength="16">
+
+            <!-- Card Holder Name -->
+            <label for="card-holder">Card Holder Name <small>(Exactly as shown on card)</small></label>
+            <input type="text" id="card-holder" placeholder="John Doe" required>
+
+            <!-- Payment Date (Previously Expiry Date) -->
+            <label for="payment-date">Payment Date <small>(Select payment date)</small></label>
+            <input type="date" id="payment-date" required>
+
+            <!-- CVV -->
+            <label for="cvv">CVV <small>(3 digits, back of card)</small></label>
+            <input type="password" id="cvv" placeholder="123" required pattern="\d{3}" title="Please enter a 3-digit CVV" maxlength="3">
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Payment</button>
+        </form>
+    </div>
+</div>
+
+
+    
+    <p class="profile-address">Address: Alley 74, Cau Dien Ward, Nam Tu Liem District, Hanoi City. Phone: 0123456789</p>
+</body>
+</html>
